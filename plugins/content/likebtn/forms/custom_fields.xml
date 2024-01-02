@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="params" >
+        <fieldset name="likebtn_custom_fields" label="PLG_LIKEBTN_CUSTOM_FIELDS" >
+            <field
+                name="likebtn_likes"
+                type="text"
+                disabled="true"
+                label="PLG_LIKEBTN_CUSTOM_FIELD_LIKES"
+            />
+            <field
+                name="likebtn_dislikes"
+                type="text"
+                disabled="true"
+                label="PLG_LIKEBTN_CUSTOM_FIELD_DISLIKES"
+            />
+        </fieldset>
+    </fields>
+</form>

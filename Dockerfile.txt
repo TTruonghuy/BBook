@@ -1,0 +1,14 @@
+# Sử dụng hình ảnh php:7.4-apache làm base image
+FROM php:7.4-apache
+
+# Sao chép toàn bộ thư mục Joomla vào thư mục /var/www/html
+COPY . /var/www/html
+
+# Cài đặt các extension và gói cần thiết
+RUN docker-php-ext-install mysqli && \
+    apt-get update && \
+    apt-get install -y libzip-dev && \
+    docker-php-ext-install zip
+
+# Cài đặt Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer

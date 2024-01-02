@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_POSTLIKE</name>
+	<author>Sergey Pronin</author>
+	<creationDate>07.04.2014</creationDate>
+	<copyright>Copyright (C) 2013. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>seregin-pro@ya.ru</authorEmail>
+	<authorUrl>seregin-pro.ru</authorUrl>
+	<version>1.1.2</version>
+	<description>PLG_CONTENT_POSTLIKE_XML_DESCRIPTION</description>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">assets/install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">assets/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<files>
+		<filename plugin="postlike">postlike.php</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>images</folder>
+	</files>
+	<languages folder="language">
+		<language tag="ru-RU">ru-RU/ru-RU.plg_content_postlike.ini</language>
+		<language tag="ru-RU">ru-RU/ru-RU.plg_content_postlike.sys.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_postlike.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_postlike.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="display" type="list"
+					default="0"
+					label="PLG_CONTENT_POSTLIKE_FIELD_DISPLAY_MAIN_LABEL"
+					description="PLG_CONTENT_POSTLIKE_FIELD_DISPLAY_MAIN_DESC">
+					<option value="0">PLG_CONTENT_POSTLIKE_OPTION_AFTER_TITLE</option>
+					<option value="1">PLG_CONTENT_POSTLIKE_OPTION_AFTER_CONTENT</option>
+				</field>
+				<field name="hide" type="radio"
+					default="0"
+					label="PLG_CONTENT_POSTLIKE_FIELD_HIDE_IN_BLOG_LABEL"
+					description="PLG_CONTENT_POSTLIKE_FIELD_HIDE_IN_BLOG_DESC">
+					<option value="1">JNO</option>
+					<option value="0">JYES</option>
+				</field>
+				<field name="access" type="radio"
+					default="0"
+					label="PLG_CONTENT_POSTLIKE_FIELD_ACCESS_LABEL"
+					description="PLG_CONTENT_POSTLIKE_FIELD_ACCESS_DESC">
+					<option value="0">PLG_CONTENT_POSTLIKE_OPTION_ACCESS_PUBLIC</option>
+					<option value="1">PLG_CONTENT_POSTLIKE_OPTION_ACCESS_REGISTERED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

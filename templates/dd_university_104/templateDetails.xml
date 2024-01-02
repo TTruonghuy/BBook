@@ -1,0 +1,699 @@
+<?xml version="1.0"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" client="site" type="template" method="upgrade">
+  <name>dd_university_104</name>
+  <creationDate>2017-04-04</creationDate>
+ <version>1.0</version>
+   <author>DiabloDesign</author>
+   <authorUrl>http://www.diablodesign.eu</authorUrl>
+	<copyright>Copyright (C) DiabloDesign License All rights reserved.</copyright>
+	<version>1.0.0</version>
+
+  <description>
+	<![CDATA[
+		<style type="text/css" media="all">
+				<!--
+				h1 {clear:both;font-family: Georgia, sans-serif;font-size:36px;  font-weight: normal;}
+				h2 {clear:both;font-family: Georgia, sans-serif;font-size:20px;  font-weight: normal; }
+				-->
+			</style>
+
+
+	        <div class="dd-description clearfix">
+	        <h1><img src="http://diablodesign.eu/syg.png" /></a><span style="color: #cc0607;"> DD UNIVERSITY 104 Premium Version</span></h1>
+	        <hr>
+			<div class="pull-left" style="max-width: 35.69%;">
+			<img style="max-width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 10px; background: #fff; border: 1px solid #e1e1e1;" src="../templates/dd_university_104/images/sc1.jpg" />
+		
+		</div>
+		<div class="pull-left" style="max-width: 64.31%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 0 30px;">
+			<div style="margin-bottom: 20px;">
+				<div style="margin-bottom: 20px;">
+			
+			
+			<div style="margin: 20px 0 0;">
+			
+
+				</div></div></div></div>
+	</div>
+	]]>
+	</description>
+  <files>
+    <file>CloudZoom.js</file>
+    <file>Readme.txt</file>
+    <file>blank.png</file>
+    <file>bootstrap.min.js</file>
+    <file>component.php</file>
+    <file>error.php</file>
+    <file>functions-additional.php</file>
+    <file>functions.php</file>
+    <file>index.html</file>
+    <file>index.php</file>
+    <file>jquery.js</file>
+    <file>layout.core.js</file>
+    <file>layout.ie.css</file>
+    <file>layout.ie.js</file>
+    <file>modrender.php</file>
+    <file>script.js</file>
+    <file>style.ie.css</file>
+    <file>templateDetails.xml</file>
+   
+    <file>virtuemart.js</file>
+    <folder>css</folder>
+    <folder>data</folder>
+    <folder>fields</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>includes</folder>
+    <folder>js</folder>
+    <folder>language</folder>
+    <folder>library</folder>
+    <folder>plugins</folder>
+    <folder>prototypes</folder>
+    <folder>templates</folder>
+    <folder>site</folder>
+  </files>
+  <positions>
+    <position>bottom-banner-1</position>
+    <position>box1</position>
+    <position>box2</position>
+    <position>box3</position>
+    <position>box4</position>
+    <position>box5</position>
+    <position>box6</position>
+    <position>box7</position>
+    <position>box8</position>
+    <position>box9</position>
+    <position>boxa</position>
+    <position>boxb</position>
+    <position>breadcrumb</position>
+    <position>dd-footer-1</position>
+    <position>dd-footer-2</position>
+    <position>dd-footer-3</position>
+    <position>dd-footer-4</position>
+    <position>dd-footer-5</position>
+    <position>dd-footer-6</position>
+    <position>dd-footer-7</position>
+    <position>dd-top-1</position>
+    <position>dd-top-2</position>
+    <position>dd-top-3</position>
+    <position>dd-top-4</position>
+    <position>dd-top-5</position>
+    <position>dd-top-6</position>
+    <position>dd-top-7</position>
+    <position>left</position>
+    <position>position-1</position>
+    <position>position-7</position>
+    <position>position-8</position>
+    <position>slideshow</position>
+    <position>topbanner-1</position>
+  </positions>
+  <config>
+    <fields name="params" addfieldpath="/templates/dd_university_104/fields">
+      <fieldset name="config" label="Configuration">
+          <field type="spacer" class="text" label="...........................................LOGO......................................................." /> 
+          <field name="logoFile" default="templates/dd_university_104/images/designer/logo.png" type="media" label="TPL_LOGO_LABEL" description="TPL_LOGO_DESC"/>
+		  
+		   <field type="spacer" class="text" label="......................License.KEY..................................................................." />         
+           <field name="license" type="text" default="" size="50" label="License key" description="License key" disabled="false"/>
+		   
+        
+		    <field type="spacer" class="text" label="...........................................FAVICON...................................................." />    
+          <field name="fav" type="media" label="Upload favicon" description="" default="templates/dd_university_104/images/designer/favicon.ico" />
+     
+      </fieldset>
+	  <fieldset name="header" label="Header">  
+
+	      <field type="spacer" class="text" label="...........................................HOT.INFO..................................................." /> 
+		<field name="hin" type="text" default="HOT-INFO" size="50" label="Name HOT-INFO" disabled="false"/>
+		<field name="hi" type="text" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" size="50" label="HOT NEWS" disabled="false"/>
+		<field name="hil" type="text" default="" size="50" label="http:// " disabled="false"/>
+		<field name="speedh" type="text" default="3" size="50" label="speed hot info " disabled="false"/>
+			<field type="spacer" label="Disable HOT INFO " />
+			<field name="hic" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+					</field>
+					<field type="spacer" class="text" label="...........................................Social................................................." />
+					<field type="spacer" class="text" label="...........................................FACEBOOK................................................." />
+			<field name="facebook" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+				<field name="fc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field type="spacer" class="text" label=".........................................TWITTER................................................." />
+            <field name="twitter" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+				<field name="tc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+			
+				<field type="spacer" class="text" label=".........................................GOOGLE+................................................." />
+			<field name="google" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+				<field name="gc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+					<field type="spacer" class="text" label=".........................................PINTEREST..........................................." />
+			<field name="pinterest" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+				<field name="pc" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				
+							<field type="spacer" class="text" label=".........................................Close all icon..........................................." />
+	
+				<field name="cal" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+		  <field type="spacer" class="text" label="...........................................Contact..................................................." /> 		
+          <field type="spacer" class="text" label="...........................................Telephone.................................................." />
+		 
+          <field name="hc2" type="text" label="Telephone" description="" default="+1 (555) 456 3890" disabled="false"/>
+		  <field name="hc3" type="text" label="e-mail" description="" default="info@company.com" disabled="false"/>
+		 
+		  <field type="spacer" class="text" label="...........................................Adress....................................................." />  
+		 
+          <field name="hc5" type="text" label="Adress line 1" description="" default="4934 Irving Place" disabled="false"/>
+		  <field name="hc6" type="text" label="Adress line 2" description="" default="Pond, MO 63040" disabled="false"/>
+		
+		  <field type="spacer" class="text" label="...........................................Didable.Header.Contact....................................." />  
+		  <field name="hcl" type="radio" default="1" class="btn-group" label="" >
+					<option value="1">ON</option>
+					<option value="0">OFF</option>
+					
+				
+	      </field>  
+		  <field type="spacer" class="text" label="...........................................Close.search.input....................................." />  
+		  <field name="cser" type="radio" default="1" class="btn-group" label="" >
+					<option value="1">ON</option>
+					<option value="0">OFF</option>
+					
+				
+	      </field>  
+		  
+      </fieldset>
+	   <fieldset name="slideshow" label="Slideshow">
+				
+		  
+		  <field type="spacer" class="text" label="...............................SLIDE.1................................................................" />	
+		  <field name="f1" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/slideshow/1.jpg"/>
+		 <field name="pe1" type="media" label="Upload photo person " description="" default="templates/dd_university_104/images/designer/persons/1.jpg"/>
+		  <field name="sl1" type="text" label="Caption"  default="ENTER YOUR TEXT HERE"/>
+		  <field name="sl2" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+			  <field type="spacer" label="Close slide 1 " />
+			 <field name="slide1" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">ON</option>
+					<option value="1">OFF</option>
+					</field>	
+					
+				
+		  
+		   <field type="spacer" class="text" label="...............................SLIDE.2................................................................" />	
+		   <field name="f2" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/slideshow/2.jpg"/>
+		   <field name="pe2" type="media" label="Upload photo person " description="" default="templates/dd_university_104/images/designer/persons/2.jpg"/>
+		   <field name="sl3" type="text" label="Caption"  default="ENTER YOUR TEXT HERE"/>
+		   <field name="sl4" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+ 			 <field name="slide2" type="radio" default="1" class="btn-group"  label="" >
+			<option value="0">ON</option>
+					<option value="1">OFF</option>
+					</field>
+		  	
+		  <field type="spacer" class="text" label="...............................SLIDE.3................................................................" />	
+		  <field name="f3" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/slideshow/3.jpg"/>
+		  <field name="pe3" type="media" label="Upload photo person " description="" default="templates/dd_university_104/images/designer/persons/3.jpg"/>
+		   <field name="sl5" type="text" label="Caption"  default="ENTER YOUR TEXT HERE"/>
+		  <field name="sl6" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+				  	  <field type="spacer" label="Disable slide 3 " />
+			 <field name="slide3" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">ON</option>
+					<option value="1">OFF</option>
+					</field>
+		  	
+		  <field type="spacer" class="text" label="...............................SLIDE.4................................................................" />	
+		  <field name="f4" type="media" label="Upload photo" description="" default="templates/dd_university_104/images/designer/slideshow/4.jpg"/>
+		  <field name="pe4" type="media" label="Upload photo person " description="" default="templates/dd_university_104/images/designer/persons/4.jpg"/>
+		   <field name="sl7" type="text" label="Caption"  default="ENTER YOUR TEXT HERE"/>
+		  <field name="sl8" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+		  	  <field type="spacer" label="Disable slide 4 " />
+			 <field name="slide4" type="radio" default="1" class="btn-group"  label="" >
+				<option value="0">ON</option>
+					<option value="1">OFF</option>
+					</field>
+				
+		  
+		  <field type="spacer" class="text" label="...............................SLIDE.5................................................................" />	
+		  <field name="f5" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/slideshow/5.jpg"/>
+		  <field name="pe5" type="media" label="Upload photo person " description="" default="templates/dd_university_104/images/designer/persons/5.jpg"/>   
+		  <field name="sl9" type="text" label="Caption"  default="ENTER YOUR TEXT HERE"/>
+		  <field name="sl10" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+	 		  <field type="spacer" label="Disable slide 5 " />
+		  <field name="slide5" type="radio" default="1" class="btn-group"  label="" >
+			<option value="0">ON</option>
+					<option value="1">OFF</option>
+					</field>
+					
+		  <field type="spacer" class="text" label="..........................................Speed slideshow............................................." />   
+		  <field name="speed" type="text" default="4600" size="50"  label="Speed slideshow 0/ms " disabled="false"/>
+		  
+	
+			  <field type="spacer" label="close Slideshow - position module box1" />
+			 <field name="slic" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+					</field>		
+		
+	  </fieldset>
+	  	  <fieldset name="personbox" label="Person BOX">
+			
+		
+		
+			    <field type="spacer" class="text" label="..........................................Person.1................................." />         
+					
+			<field name="p1" type="media" label="Upload image" description="" default="templates/dd_university_104/images/designer/persons1/1.jpg"/>
+			<field name="p2" type="text" default="LANA STEVENS" size="50" label="Name" />
+			<field name="p3b" type="text" default="http://" size="50" label="http://" />
+			<field type="spacer" class="text" label="...........................................FACEBOOK................................................." />
+			<field name="pf1" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+				<field name="ps1" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field type="spacer" class="text" label=".........................................TWITTER................................................." />
+            <field name="pt1" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+				<field name="ps2" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+			
+				<field type="spacer" class="text" label=".........................................GOOGLE+................................................." />
+			<field name="pg1" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+				<field name="ps3" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+	
+	    <field type="spacer" class="text" label="..........................................Person.2................................." />         
+					
+			<field name="p5" type="media" label="Upload image" description="" default="templates/dd_university_104/images/designer/persons1/2.jpg"/>
+			<field name="p6" type="text" default="RICHARD DICKSON" size="50" label="Name" />
+		    <field name="p7b" type="text" default="http://" size="50" label="http://" />
+			<field type="spacer" class="text" label="...........................................FACEBOOK................................................." />
+			<field name="pf2" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+				<field name="ps4" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field type="spacer" class="text" label=".........................................TWITTER................................................." />
+            <field name="pt2" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+				<field name="ps5" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+			
+				<field type="spacer" class="text" label=".........................................GOOGLE+................................................." />
+			<field name="pg2" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+				<field name="ps6" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+			
+			 
+	    <field type="spacer" class="text" label="..........................................Person.3................................." />         
+					
+			<field name="p9" type="media" label="Upload image" description="" default="templates/dd_university_104/images/designer/persons1/3.jpg"/>
+			<field name="p10" type="text" default="NORMAN GRIMES" size="50" label="Name" />
+	        <field name="p11b" type="text" default="http://" size="50" label="http://" />
+			<field type="spacer" class="text" label="...........................................FACEBOOK................................................." />
+			<field name="pf3" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+				<field name="ps7" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field type="spacer" class="text" label=".........................................TWITTER................................................." />
+            <field name="pt3" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+				<field name="ps8" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+			
+				<field type="spacer" class="text" label=".........................................GOOGLE+................................................." />
+			<field name="pg3" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+				<field name="ps9" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+			
+	
+	
+	    <field type="spacer" class="text" label="..........................................Person.4................................." />         
+					
+			<field name="p13" type="media" label="Upload image" description="" default="templates/dd_university_104/images/designer/persons1/4.jpg"/>
+			<field name="p14" type="text" default="MICHAEL ALBER" size="50" label="Name" />
+	       <field name="p15b" type="text" default="http://" size="50" label="http://" />
+		   <field type="spacer" class="text" label="...........................................FACEBOOK................................................." />
+			<field name="pf4" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+				<field name="ps10" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field type="spacer" class="text" label=".........................................TWITTER................................................." />
+            <field name="pt4" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+				<field name="ps11" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+			
+				<field type="spacer" class="text" label=".........................................GOOGLE+................................................." />
+			<field name="pg4" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+				<field name="ps12" type="radio" default="1" class="btn-group" label="" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+							   <field type="spacer" class="text" label="...............................Animation BOX..............................................................." />
+		   <field name="pab" type="list" default="onload" label="Select animation box" description="">
+              <option value="scroll">scroll</option>
+               <option value="onload">onload</option>
+               </field>
+
+	
+  <field type="spacer" label="Display Person BOX " />
+			 <field name="pbc" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+					</field>
+				
+			</fieldset>
+			
+			<fieldset name="info" label="Info Box">
+            <field name="ib1" type="text" default="ARE YOU LAUNCHINGA NEW BRAND?" size="50" label="Title" />
+		    <field name="ib2" type="textarea" default="We develop names, logos, websites, packaging, products, retail merchandising, corporate environments, and more. With offices in New York and Silicon Valley we service clients worldwide thanks to a network of highly talented resources that include strategic and creative partners across the globe. If you want to build brand value, send us a note. We’d love to hear from you."  rows="8" cols="60" label="Text" />
+	     		   
+				   <field type="spacer" class="text" label="...............................Animation BOX..............................................................." />
+		   <field name="anb" type="list" default="scroll" label="Select animation box" description="">
+  <option value="scroll">scroll</option>
+  <option value="onload">onload</option>
+</field>
+
+<field type="spacer" label="Close Info Box" />
+			 <field name="iic" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+					</field>	
+      </fieldset>
+	  <fieldset name="movie" label="Youtube Movie">
+			<field type="spacer" class="text" label="...........................................Youtube movie 1................................................" />
+			<field name="video" type="text" default="OdMjrwUycW8" size="50" label="ID youtube" description="ID youtube"/>
+			<field name="start" type="text" default="5" size="50" label="Time start 1 = 1 second" description="Time start"/>
+			<field name="autoplay" type="radio" default="0" class="btn-group" label="Autoplay movie" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field name="show" type="radio" default="0" class="btn-group" label="Shoow control Player" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				
+				<field name="showinfo" type="radio" default="0" class="btn-group" label="Shoow info Player" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field type="spacer" class="text" label="...........................................Video text................................................" />
+				<field name="vti" type="text" default="Forbidden Science" size="50" label="Video Title" />
+				<field name="vte" type="text" default="Documentary 2017" size="50" label="Video Text" />
+				
+			<field type="spacer" class="text" label="...........................................Youtube movie 2................................................" />
+			<field name="video2" type="text" default="7NF9s8jBUkg" size="50" label="ID youtube" description="ID youtube"/>
+			<field name="start2" type="text" default="5" size="50" label="Time start 1 = 1 second" description="Time start"/>
+			<field name="autoplay2" type="radio" default="0" class="btn-group" label="Autoplay movie" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field name="show2" type="radio" default="0" class="btn-group" label="Shoow control Player" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				
+				<field name="showinfo2" type="radio" default="0" class="btn-group" label="Shoow info Player" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field type="spacer" class="text" label="...........................................Video text................................................" />
+				<field name="vti1" type="text" default="When We Reach the " size="50" label="Video Title" />
+				<field name="vte1" type="text" default="Space Science and Discovery" size="50" label="Video Text" />
+				
+				<field type="spacer" class="text" label="...........................................Youtube movie 3................................................" />
+			<field name="video3" type="text" default="34sEX6VM9sU" size="50" label="ID youtube" description="ID youtube"/>
+			<field name="start3" type="text" default="5" size="50" label="Time start 1 = 1 second" description="Time start"/>
+			<field name="autoplay3" type="radio" default="0" class="btn-group" label="Autoplay movie" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				<field name="show3" type="radio" default="0" class="btn-group" label="Shoow control Player" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+				
+				<field name="showinfo3" type="radio" default="0" class="btn-group" label="Shoow info Player" description="">
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+				</field>
+			
+		<field type="spacer" class="text" label="...........................................Video text................................................" />
+				<field name="vti2" type="text" default="Life in The Universe Documentary" size="50" label="Video Title" />
+				<field name="vte2" type="text" default="HD 1080p " size="50" label="Video Text" />
+		        <field type="spacer" class="text" label="...............................Animation BOX..............................................................." />
+		        <field name="vab" type="list" default="onload" label="Select animation box" description="">
+                       <option value="scroll">scroll</option>
+                       <option value="onload">onload</option>
+                </field>
+				  <field type="spacer" label="close video box - enabled position module box2" />
+			 <field name="vic" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+					</field>	
+		  </fieldset>
+
+	  	    <fieldset name="about" label="infobox1">
+      
+		   <field name="ab1" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/person1.png" />         
+           <field name="ab2" type="text" default="About Us" size="50" label="Title" />
+		   <field name="ab2a" type="text" default="Lorem ipsum dolor sit amet, consectetur" size="50" label="Title 2" />
+		   <field name="ab3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa"  rows="8" cols="60" label="Text" />
+		   <field type="spacer" class="text" label="...............................Button..............................................................." />
+		   <field name="ab4" type="text" default="Continue Reading" size="50" label="button" />
+		   <field name="ab5" type="text" default="http://" size="50" label="http://" />
+		     		   <field type="spacer" class="text" label="...............................Animation BOX..............................................................." />
+		   <field name="aab" type="list" default="scroll" label="Select animation box" description="">
+  <option value="scroll">scroll</option>
+  <option value="onload">onload</option>
+</field>
+		 	   <field type="spacer" label="close Box " />
+			 <field name="aic" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+					</field>	
+      </fieldset>
+	      <fieldset name="infobox2" label="Infobox 2">
+	  		   <field name="ib21" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/fota.jpg" />         
+           <field name="ib22" type="text" default="JOIN US FOR SUCCESS" size="50" label="Title" />
+	
+		   <field name="ib24" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa"  rows="8" cols="60" label="Text" />
+		   <field type="spacer" class="text" label="...............................Button..............................................................." />
+		   <field name="ib25" type="text" default="Continue Reading" size="50" label="button" />
+		   <field name="ib26" type="text" default="http://" size="50" label="http://" />
+		     		   <field type="spacer" class="text" label="...............................Animation BOX..............................................................." />
+		   <field name="ib2ac" type="list" default="scroll" label="Select animation box" description="">
+  <option value="scroll">scroll</option>
+  <option value="onload">onload</option>
+</field>
+		 	   <field type="spacer" label="close Box " />
+			 <field name="qx" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+					</field>	
+      </fieldset>
+	  	 <fieldset name="circle" label="Circle Button">
+		 <field name="htc" type="text" default="Why Us" size="50" label="Header Title" />
+		 <field type="spacer" class="text" label="..........................................1.Circle button..............................................." />         	
+		 <field name="cf1" type="media" label="Upload image" description="" default="templates/dd_university_104/images/designer/circle/1.jpg"/>
+		 <field name="ct1" type="text" default="Mission Statement" size="50" label="Title" />
+		 <field name="cte1" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text"  />
+		 <field name="cl1" type="text" default="http://" size="50" label="url image" />
+		 	  
+	
+			
+		  
+		 
+		 <field type="spacer" class="text" label="..........................................2.Circle button.............................................." />  	
+		 <field name="cf2" type="media" label="Upload image" description="" default="templates/dd_university_104/images/designer/circle/2.jpg"/>
+		 <field name="ct2" type="text" default="Organizations" size="50" label="Title" />
+		 <field name="cte2" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text"  />
+		 <field name="cl2" type="text" default="http://" size="50" label="url image" />
+		
+		 
+		 <field type="spacer" class="text" label="..........................................3.Circle button.............................................." />  
+	     <field name="cf3" type="media" label="Upload image" description="" default="templates/dd_university_104/images/designer/circle/3.jpg"/>
+		 <field name="ct3" type="text" default="Online Education" size="50" label="Title" />
+		 <field name="cte3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text"  />
+		 <field name="cl3" type="text" default="http://" size="50" label="url image" />
+
+	     
+		 <field type="spacer" class="text" label="..........................................4.Circle button.............................................." />  
+	
+	    <field name="cf4" type="media" label="Upload image" description="" default="templates/dd_university_104/images/designer/circle/4.jpg"/>
+		<field name="ct4" type="text" default="Successful Future" size="50" label="Title" />
+		<field name="cte4" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text"  />
+	    <field name="cl4" type="text" default="http://" size="50" label="url image" />
+		  
+	     		   <field type="spacer" class="text" label="...............................Animation BOX..............................................................." />
+		   <field name="cbx" type="list" default="scroll" label="Select animation box" description="">
+  <option value="scroll">scroll</option>
+  <option value="onload">onload</option>
+</field>
+	   
+	    <field type="spacer" label="Disable circle button " />
+		<field name="cbx1" type="radio" default="1" class="btn-group" label="">
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+				</field>
+				
+    </fieldset>
+	<fieldset name="stats" label="Stats BOX">
+          <field type="spacer" class="text" label="......................STATS.BOX......................................................................." />
+		  <field name="ims1" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/icon/1.png" />
+		    
+		  <field name="s1" type="text" default="YEARS" size="50" label="Title" description="" disabled="false"/>
+		  <field name="sn1" type="text" default="30" size="50" label="Number" description="" disabled="false"/>
+		  <field name="ims2" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/icon/2.png" />      
+          <field name="s2" type="text" default="PROJECTS" size="50" label="Title" description="" disabled="false"/>
+		  <field name="sn2" type="text" default="1234" size="50" label="Number" description="" disabled="false"/>
+		   <field name="ims3" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/icon/3.png" />      
+		  <field name="s3" type="text" default="AWARDS" size="50" label="Title" description="" disabled="false"/> 
+		  <field name="sn3" type="text" default="121" size="50" label="Number" description="" disabled="false"/>
+		  <field name="ims4" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/icon/4.png" />      
+		  <field name="s4" type="text" default="ABOUT CLIENTS" size="50" label="Title" description="" disabled="false"/>
+		  <field name="sn4" type="text" default="43679" size="50" label="Number" description="" disabled="false"/>
+		  
+		  	     		   <field type="spacer" class="text" label="...............................Animation BOX..............................................................." />
+		   <field name="cix" type="list" default="scroll" label="Select animation box" description="">
+  <option value="scroll">scroll</option>
+  <option value="onload">onload</option>
+</field>
+		   
+		  <field type="spacer" label="Close Stat BOX" />
+			 <field name="dsb" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+					</field>	   
+     </fieldset>
+	 <fieldset name="gallery" label="Gallery Box">
+				  
+				  
+	         <field type="spacer" class="text" label="..........................................Header................................." />   
+			
+           
+		   <field type="spacer" class="text" label="......................box.1......................................................................." />
+		   <field name="i2" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/gallery/1.jpg" />         
+		   <field name="i3" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="i4" type="text" default="Read More" size="50" label="button" />
+		   <field name="i5" type="text" default="http://" size="50" label="http://" /> 
+		   
+		   <field type="spacer" class="text" label="......................box.2......................................................................." />
+		   <field name="i6" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/gallery/2.jpg" />         
+		   <field name="i7" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="i8" type="text" default="Read More" size="50" label="button" />
+		   <field name="i9" type="text" default="http://" size="50" label="http://" /> 
+		  
+		   <field type="spacer" class="text" label="......................box.3......................................................................." />
+		   <field name="i10" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/gallery/3.jpg" />         
+           
+		   <field name="i11" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="i12" type="text" default="Read More" size="50" label="button" />
+		   <field name="i13" type="text" default="http://" size="50" label="http://" /> 
+		   
+		   <field type="spacer" class="text" label="......................box.4......................................................................." />
+		   <field name="i14" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/gallery/4.jpg" />         
+		   <field name="i15" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="i16" type="text" default="Read More" size="50" label="button" />
+		   <field name="i17" type="text" default="http://" size="50" label="http://" /> 
+		   
+		   <field type="spacer" class="text" label="......................box.5......................................................................." />
+		   <field name="i18" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/gallery/5.jpg" />         
+		   <field name="i19" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />
+		   <field name="i20" type="text" default="Read More" size="50" label="button" />
+		   <field name="i21" type="text" default="http://" size="50" label="http://" /> 
+	 		   
+			<field type="spacer" class="text" label="......................box.6......................................................................." />
+		   <field name="i22" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/gallery/6.jpg" />         
+		   <field name="i23" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."  rows="8" cols="60" label="Text" />  
+		   <field name="i24" type="text" default="Read More" size="50" label="button" />
+		   <field name="i25" type="text" default="http://" size="50" label="http://" />  
+		   
+		  	     		   <field type="spacer" class="text" label="...............................Animation BOX..............................................................." />
+		   <field name="gix" type="list" default="scroll" label="Select animation box" description="">
+  <option value="scroll">scroll</option>
+  <option value="onload">onload</option>
+</field>
+		   <field type="spacer" label="Close Gallery" />
+			<field name="gic" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+					</field>	
+		
+     </fieldset>
+	 <fieldset name="footer" label="Footer BOX">
+	   <field type="spacer" class="text" label="......................Bacground.footer......................................................................." />
+		  <field name="bgf" type="media" label="Upload photo " description="" default="templates/dd_university_104/images/designer/bg.jpg" />
+          <field type="spacer" class="text" label="......................FOOTER.BOX......................................................................." />
+		  <field name="fo0" type="text" default="Get in Touch with Us" size="50" label="Header Title" description="" disabled="false"/>
+		  <field name="fo1" type="text" default="Our Mission" size="50" label="Title" description="" disabled="false"/>
+		  <field name="fo2" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " rows="8" cols="60"  label="Text"  />
+		  <field type="spacer" class="text" label="......................Contact.Footer..................................................................." />
+		  <field name="fo3" type="text" default="Visit Our Office" size="50" label="Title" description="" disabled="false"/>
+          <field name="fo4" type="text" default="+1 (555) 456 3890" size="50" label="Telephone 1" description="" disabled="false"/>
+		  <field name="fo5" type="text" default="+1 (555) 564 9354" size="50" label="Telephone 2" description="" disabled="false"/>
+		   
+		  <field name="fo6" type="text" default="4934 Irving Place," size="50" label="Adress line 1" description="" disabled="false"/> 
+		  <field name="fo7" type="text" default="Pond, MO 63040" size="50" label="Adress line 2" description="" disabled="false"/>
+		  
+		  <field name="fo8" type="text" default="support@company.com " size="50" label="E-mail 1" description="" disabled="false"/>
+		  <field name="fo9" type="text" default="info@company.com" size="50" label="E-mail 2" description="" disabled="false"/>
+		  <field type="spacer" class="text" label="......................Site.name.footer..................................................................." />
+		  <field name="footer1" type="text" default="University" size="50" label="Site name" description="footer site name"/>
+		  
+		  <field type="spacer" class="text" label="...........................................Google.Maps.................................................." /> 
+          <field name="map1" type="text" default="Poland" label="Country" description="City" filter="string" />
+		  <field name="map2" type="text" default="os na stoku 1" label="Street" description="Street" filter="string" />
+		   
+		    <field type="spacer" label="Close footer BOX - enabled position module box8" />
+			 <field name="fsb" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">No Pages</option>
+					<option value="1">Hompage</option>
+					<option value="2">All Pages</option>
+					</field>	
+     </fieldset>
+	  	   <fieldset name="design" label="Design BY">
+           <field type="spacer" class="text" label="......................Disable.Design BY................................................................" />         
+            <field name="dc" type="radio" default="1" class="btn-group"  label="" >
+					<option value="0">OFF</option>
+					<option value="1">ON</option>
+					</field>
+     </fieldset>
+		   
+    </fields>
+  </config>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.tpl_dd_university_104.ini</language>
+  </languages>
+</extension>

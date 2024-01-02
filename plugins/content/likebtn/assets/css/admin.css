@@ -1,0 +1,79 @@
+.use_settings_from_container .nav-tabs > .active > a,
+.use_settings_from_container .nav-tabs > .active > a:hover,
+.use_settings_from_container .nav-tabs > .active > a:focus {
+    background-color: #F5F5F5;
+}
+.use_settings_from_container .nav-tabs {
+    margin-bottom: -1px;
+}
+.likebtn_select_category {
+    width: 400px;
+}
+.tabs-left .use_settings_from_container .tab-content {
+    overflow: visible;
+}
+#likebtnContentTypeButtonTabContent {
+    min-height:600px;
+    height:auto!important; /* Для всех браузеров кроме <IE6 */
+    height:600px;
+}
+
+.input-group-addon {
+	display: inline-block;
+	padding: 5px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group-addon i {
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    cursor: pointer;
+}
+.likebtn_icon_prv {
+	margin-top: 5px;
+	max-width: 250px;
+	max-height: 250px;
+}
+.likebtn_icon_list {
+	width: 220px;
+}
+
+/* Color picker */
+.colorpicker-2x .colorpicker-saturation {
+    width: 200px;
+    height: 200px;
+}
+.colorpicker-2x .colorpicker-hue,
+.colorpicker-2x .colorpicker-alpha {
+    width: 30px;
+    height: 200px;
+}
+.colorpicker-2x .colorpicker-color,
+.colorpicker-2x .colorpicker-color div{
+    height: 30px;
+}
+
+/* Select2 */
+.select2-celled {
+	display: inline-block;
+    width: 43px;
+    text-align: center;
+}
+.icon_dropdown.select2-container .lb-fi, .select2-results .lb-fi {
+    font-size: 22px;
+}
+.select2-celled .select2-results li {
+    display: inline-block;
+    text-align: center;
+    width: 43px;
+}

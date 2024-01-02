@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+    <name>PLG_LIKEBTN_NAME</name>
+    <version>1.8</version>
+    <creationDate>May 2014</creationDate>
+    <author>LikeBtn.com</author>
+    <authorEmail>info@likebtn.com</authorEmail>
+    <authorUrl>https://likebtn.com</authorUrl>
+    <copyright>Copyright (C) 2013 by LikeBtn. All rights reserved.</copyright>
+    <license>GPLv2 or later</license>
+    <description>PLG_LIKEBTN_DESCRIPTION</description>
+    <files>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>sql</folder>
+		<folder>forms</folder>
+        <filename plugin="likebtn">likebtn.php</filename>
+        <filename>likebtn.class.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_content_likebtn.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.plg_content_likebtn.ini</language>
+    </languages>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/mysql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/mysql/updates</schemapath>
+        </schemas>
+    </update>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field type="spacer" name="spacer1" label="PLG_LIKEBTN_SPACER1_LABEL" />
+                <field
+                    name="plan"
+                    type="list"
+                    default="0"
+                    required="true"
+                    label="PLG_LIKEBTN_PLAN_LABEL"
+					description="PLG_LIKEBTN_PLAN_DESC"
+                >
+                    <option value="9">TRIAL</option>
+                    <option value="0">FREE</option>
+                    <option value="1">PLUS</option>
+                    <option value="2">PRO</option>
+                    <option value="3">VIP</option>
+                    <option value="4">ULTRA</option>
+                </field>
+                <field type="spacer" name="spacer2" label="PLG_LIKEBTN_SPACER2_LABEL" />
+                <field type="spacer" name="spacer3" label="PLG_LIKEBTN_SPACER3_LABEL" />
+                <field
+                    name="email"
+                    type="email"
+                    default=""
+                    required="false"
+                    validate="email"
+                    class="validate-email"
+                    label="PLG_LIKEBTN_EMAIL_LABEL"
+					description="PLG_LIKEBTN_EMAIL_DESC"
+                />
+                <field
+                    name="api_key"
+                    type="text"
+                    default=""
+                    required="false"
+                    label="PLG_LIKEBTN_API_KEY_LABEL"
+					description="PLG_LIKEBTN_API_KEY_DESC"
+                />
+                <field
+                    name="sync_interval"
+                    type="list"
+                    default="0"
+                    required="true"
+                    label="PLG_LIKEBTN_SYNC_INTERVAL_LABEL"
+					description="PLG_LIKEBTN_SYNC_INTERVAL_DESC"
+                >
+                    <option value="0">PLG_LIKEBTN_SYNC_INTERVAL_VALUE0_LABEL</option>
+                    <option value="5">5</option>
+                    <option value="15">15</option>
+                    <option value="30">30</option>
+                    <option value="60">60</option>
+                    <option value="90">90</option>
+                    <option value="120">120</option>
+                </field>
+                <field type="spacer" name="spacer_site_id_title" label="PLG_LIKEBTN_SPACER_SITE_ID_TITLE_LABEL" />
+                <field type="spacer" name="spacer_site_id_description" label="PLG_LIKEBTN_SPACER_SITE_ID_DESCRIPTION_LABEL" />
+                <field
+                    name="site_id"
+                    type="text"
+                    default=""
+                    required="false"
+                    label="PLG_LIKEBTN_SITE_ID_LABEL"
+                />
+            </fieldset>
+            <fieldset name="buttons" label="PLG_LIKEBTN_FIELDSET_BUTTONS_LABEL" addfieldpath="/plugins/content/likebtn/models/fields">
+                <field
+                    name="content_type_settings"
+                    type="Likebtncontenttypesettings"
+                />
+            </fieldset>
+            <fieldset name="statistics" label="PLG_LIKEBTN_FIELDSET_STATISTICS_LABEL" addfieldpath="/plugins/content/likebtn/models/fields">
+                <field
+                    name="likebtnstatistics"
+                    type="Likebtnstatistics"
+                />
+            </fieldset>
+            <fieldset name="help" label="PLG_LIKEBTN_FIELDSET_HELP_LABEL" addfieldpath="/plugins/content/likebtn/models/fields">
+                <field
+                    name="likebtnhelp"
+                    type="Likebtnhelp"
+                />
+            </fieldset>
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" priority="1" name="LikeBtn Updates">http://likebtn.com/uploads/cms/joomla/plugin/updater.xml?n=.php</server>
+    </updateservers>
+</extension>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.0.0" method="upgrade">
+    <name>COM_FACEBOOKREVIEWS</name>
+    <version>1.0.0</version>
+    <description></description>
+    <creationDate>2019-03-13</creationDate>
+    <copyright>Copyright (C) 2019 Elfsight, LLC. All rights reserved.</copyright>
+    <author>Elfsight</author>
+    <authorEmail>info@elfsight.com</authorEmail>
+    <authorUrl>https://elfsight.com/</authorUrl>
+    <administration>
+        <menu>COM_FACEBOOKREVIEWS_MENU</menu>
+        <files>
+            <folder>views</folder>
+            <folder>assets</folder>
+            <folder>language</folder>
+            <filename>controller.php</filename>
+            <filename>facebookreviews.php</filename>
+        </files>
+
+        <languages folder="language">
+            <language tag="en-GB">en-GB/en-GB.com_facebookreviews.sys.ini</language>
+        </languages>
+    </administration>
+
+    <updateservers>
+        <server type="extension" priority="1"
+            >https://services.elfsight.com/joomla/facebook-reviews/update.xml</server>
+    </updateservers>
+
+    <scriptfile>install.script.php</scriptfile>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+</extension>
