@@ -23,3 +23,18 @@ Designer::load("Designer_Page");
 $this->view = new DesignerPage($this);
 echo $this->view->renderTemplate($themeDir);
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <jdoc:include type="head" />
+    <script>
+        // Thay đổi hiển thị URL trên thanh địa chỉ
+        history.replaceState(null, null, "http://172.17.0.1:8080/BBook/");
+    </script>
+</head>
+<body>
+    <!-- Các phần còn lại của trang -->
+    <jdoc:include type="component" />
+</body>
+</html>
